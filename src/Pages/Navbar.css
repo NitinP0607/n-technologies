@@ -53,7 +53,7 @@
   transition: 0.4s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .menu-icon {
     display: block;
     position: fixed;
@@ -66,7 +66,7 @@
 
   .nav-links {
     position: absolute;
-    background-color: #999999;
+    background-color: #14385e;
     top: 118px;
     right: 0;
     width: 50%;
