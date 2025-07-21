@@ -61,6 +61,23 @@ const Services = () => {
           <button>Read More</button>
         </div>
       </div>
+      <hr />
+     <div className="services-details">
+       <div className="service-details">
+        <h2>Frontend Technologies</h2>
+        <div className='technologies'>
+          <p>HTML, CSS , JavaScript, React.js, Angular.js, Vue.js, Bootstrap, Tailwind CSS</p>
+          <span>Top Frontend Technologies with Expert Team</span>
+        </div>
+      </div>
+      <div className="service-details">
+        <h2>Backend Technologies</h2>
+        <div className='technologies'>
+          <p>Javascript (Node JS), Java + Spring, Python (Django) and C/C++ </p>
+          <span>Top Backend Technologies for Software Development</span>
+        </div>
+      </div>
+     </div>
    </div>
   )
 }

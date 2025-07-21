@@ -1,27 +1,28 @@
 .services-main {
   padding-top: 200px;
-  color: rgb(252, 240, 240);
+  color: rgb(36, 36, 36);
   background-color: rgb(255, 255, 255);
   min-height: 100vh;
   user-select: none;
+  box-sizing: border-box;
 }
 .services-main h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
   cursor: pointer;
-   color: rgb(141, 93, 93);
+  color: rgb(141, 93, 93);
 }
 .services-main h1:hover {
   color: #9e8f38;
   text-decoration: underline;
 }
 .services-section {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 .service:hover {
   box-shadow: 4px 4px 10px 0px rgba(66, 66, 66, 0.9);
@@ -38,7 +39,7 @@
   color: rgb(24, 20, 20);
 }
 .service img {
-  width: 400px;
+  width: 360px;
   height: 300px;
   border-radius: 15px;
   padding: 20px;
@@ -67,4 +68,64 @@
 }
 .service button:hover {
   background-color: #2b2b2b;
+}
+.services-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-details {
+  padding: 20px 50px;
+  display: flex;
+
+  justify-content: space-around;
+}
+.service-details h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  cursor: pointer;
+  color: rgb(24, 24, 24);
+}
+.technologies {
+  border: 1px solid black;
+  width: 50%;
+  padding: 20px;
+}
+.technologies p {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.technologies p:hover {
+  color: #6d6d6d;
+}
+.technologies span {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #3b0404;
+}
+.technologies span:hover {
+  color: #747474;
+}
+
+/* Responsive setion */
+
+@media (max-width: 810px) {
+  .services-main {
+    
+  }
+  .service {
+    
+  }
+  .service img {
+    
+  }
+  .services-section {
+   
+  }
+  .services-main h1 {
+  }
 }
