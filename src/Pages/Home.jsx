@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import profile from "../assets/hg.jpg";
 import "./Home.css";
 import teams from "../assets/teams.jpg";
 

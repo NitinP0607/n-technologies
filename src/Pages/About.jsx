@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
-import nittu from "../assets/portrait-smiling-handsome-man-eyeglasses_171337-4853.avif"
-import prakki from "../assets/hr-manager.webp"
-import anku from "../assets/software-development.jpeg"
-import ashish from "../assets/digital_akash.jpg"
+import nittu from "../assets/nittu.jpg"
+import prakki from "../assets/prakki.jpg"
+import anku from "../assets/anku.jpg"
+import sharad from "../assets/sharad.jpg"
 
 const About = () => {
   return (
@@ -37,10 +37,10 @@ const About = () => {
           <img src={anku} alt="" />
         </div>
         <div className="team">
-          <h3>Ashish Diwakar</h3>
-          <h4>Expert in Digital Marketing</h4>
+          <h3>Sharad Rajput</h3>
+          <h4>Expert in Backend Development</h4>
           <hr />
-          <img src={ashish} alt="" />
+          <img src={sharad} alt="" />
         </div>
       </div>
     </div>

@@ -83,7 +83,8 @@
 .contents {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-arround;
+  align-items: center;
   gap: 10px;
   padding: 20px;
   align-items: center;
@@ -136,5 +137,21 @@
   .left-home-section a {
     font-size: 20px;
     width: 200px;
+  }
+  .contents{
+    justify-content: center;
+  }
+  .home-bottom-section{
+    padding: 20px;
+    align-items: center;
+  }
+  .home-bottom-section h2{
+    font-size: 30px;
+    text-align: center;
+  }
+  .content{
+    width: 100%;
+    height: auto;
+    padding: 20px;
   }
 }

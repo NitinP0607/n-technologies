@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 .services-main h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 50px;
   font-weight: 900;
   cursor: pointer;
