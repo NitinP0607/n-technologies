@@ -38,7 +38,7 @@ const About = () => {
         </div>
         <div className="team">
           <h3>Sharad Rajput</h3>
-          <h4>Expert in Backend Development</h4>
+          <h4>Skilled Backend Development</h4>
           <hr />
           <img src={sharad} alt="" />
         </div>

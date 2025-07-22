@@ -27,14 +27,14 @@
 
 .teams {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 30px;
   gap: 20px;
 }
 .team {
-  padding: 30px;
+  padding: 20px;
 }
 .team img {
   width: 250px;
