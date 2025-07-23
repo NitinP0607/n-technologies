@@ -1,16 +1,17 @@
-import React from 'react'
-import "./Services.css"
-import frontend_job from "../assets/frontend.png"
-import backend_job from "../assets/backend.avif"
-import app_job from "../assets/appdevelopment.jpeg"
-import digi_marketing from "../assets/digital marketing.jpeg"
-import ui_ux from "../assets/uiux.jpeg"
-import softere_development from "../assets/software-development.jpeg"
+import React from "react";
+import "./Services.css";
+import frontend_job from "../assets/frontend.png";
+import backend_job from "../assets/backend.avif";
+import app_job from "../assets/appdevelopment.jpeg";
+import digi_marketing from "../assets/digital marketing.jpeg";
+import ui_ux from "../assets/uiux.jpeg";
+import softere_development from "../assets/software-development.jpeg";
+import front_techno from "../assets/frontend_technologies-img.png";
 
 const Services = () => {
   return (
-   <div className="services-main">
-    <h1>Our Services</h1>
+    <div className="services-main">
+      <h1>Our Services</h1>
       <div className="services-section">
         <div className="service">
           <img src={frontend_job} alt="frontend_deelopment" />
@@ -52,34 +53,32 @@ const Services = () => {
           <button>Read More</button>
         </div>
         <div className="service">
-          <img
-            src={softere_development}
-            alt="frontend_deelopment"
-          />
+          <img src={softere_development} alt="frontend_deelopment" />
           <span className="frontend-service">Software Development</span>
           <p>Helps you to build your software, which have your ideas</p>
           <button>Read More</button>
         </div>
       </div>
       <hr />
-     <div className="services-details">
-       <div className="service-details">
-        <h2>Frontend Technologies</h2>
-        <div className='technologies'>
-          <p>HTML, CSS , JavaScript, React.js, Angular.js, Vue.js, Bootstrap, Tailwind CSS</p>
-          <span>Top Frontend Technologies with Expert Team</span>
-        </div>
+      <div className="form-container">
+        <h2>Request a Service</h2>
+        <form className="service-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <select required>
+            <option value="">Select a Service</option>
+            <option value="web">Web Design</option>
+            <option value="app">App Development</option>
+            <option value="uiux">UI/UX Design</option>
+            <option value="seo">SEO Optimization</option>
+          </select>
+          <textarea placeholder="Tell us about your project..." required />
+          <button type="submit">Submit Request</button>
+        </form>
       </div>
-      <div className="service-details">
-        <h2>Backend Technologies</h2>
-        <div className='technologies'>
-          <p>Javascript (Node JS), Java + Spring, Python (Django) and C/C++ </p>
-          <span>Top Backend Technologies for Software Development</span>
-        </div>
-      </div>
-     </div>
-   </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Services
+export default Services;

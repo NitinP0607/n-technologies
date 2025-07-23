@@ -3,6 +3,8 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import linked from "../assets/linkedin.png";
 import insta from "../assets/instagram.png";
+import twitter from "../assets/twitter.png"
+import facebook from "../assets/facebook-media.png"
 
 const Footer = () => {
   return (
@@ -24,6 +26,16 @@ const Footer = () => {
           <div className="media-section">
             <Link to={"https://www.linkedin.com/"}>
               <img src={insta} alt="img not found" />
+            </Link>
+          </div>
+          <div className="media-section">
+            <Link to={"https://www.twitter.com/"}>
+              <img src={twitter} alt="img not found" />
+            </Link>
+          </div>
+          <div className="media-section">
+            <Link to={"https://www.facebook.com/"}>
+              <img src={facebook} alt="img not found" />
             </Link>
           </div>
         </div>
