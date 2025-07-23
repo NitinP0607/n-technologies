@@ -160,7 +160,7 @@
   }
 }
 
-@media (max-width: 1180px){
+@media (max-width: 1380px){
   .content{
     width: 300px;
     height: auto;
@@ -171,4 +171,16 @@
      justify-content: center;
      align-items: center;
    }
+   .home-section {
+    padding-top: 200px;
+    
+   }
+    .left-home-section h1{
+      font-size: 60px;
+      font-weight: 700;
+    }
+     .left-home-section h1 span{
+       font-size: 40px;
+       font-weight: 700;
+     }
 }
