@@ -65,6 +65,8 @@
 @media screen and (max-width: 810px) {
   .contact-main {
     flex-direction: column;
+    width: 100%;
+    padding: 10px;
   }
   .contact-info {
     width: 100%;
@@ -83,7 +85,7 @@
   .contact-info {
     width: 100%;
   }
-  .contact-map {
+  .contact-map iframe{
     width: 100%;
   }
 }
