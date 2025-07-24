@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="contact-main">
         <div className="contact-info">
           <h2>N-Technologies</h2>
-          <p><strong>Address:</strong> 123 IT Hub, Kanpur, Uttar Pradesh, India</p>
+          <p><strong>Address:</strong> 123 Near Primary School kachatipur, kannauj, Uttar Pradesh, India</p>
           <p><strong>Email:</strong> contact@n-technologies.in</p>
           <p><strong>Phone:</strong> +91-9026532143</p>
           <p><strong>Office Hours:</strong> Mon - Sat, 10:00 AM - 6:00 PM</p>
