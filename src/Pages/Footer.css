@@ -6,6 +6,7 @@
     color: #fff;
     padding: 20px;
     
+    
 }
 .body-section{
     display: flex;
@@ -57,12 +58,16 @@
         justify-content: space-arround;
         align-items: center;
         width: 100%;
+        height: auto;
     }
     .media hr{
         display: none;
     }
     .copy-right-section{
         text-align: center;
+    }
+    .footer-main{
+        height: auto;
     }
 }
 @media screen and (max-width: 1360px){
@@ -71,5 +76,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+    .footer-main{
+        min-height: 20vh;
     }
 }
