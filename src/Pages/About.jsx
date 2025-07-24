@@ -78,8 +78,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="contact-main">
-        <div className="contact-info">
+        <div className="contact-main-about">
+        <div className="contact-info-about">
           <h2>N-Technologies</h2>
           <p><strong>Address:</strong> 123 Near Primary School kachatipur, kannauj, Uttar Pradesh, India</p>
           <p><strong>Email:</strong> contact@n-technologies.in</p>
@@ -87,7 +87,7 @@ const About = () => {
           <p><strong>Office Hours:</strong> Mon - Sat, 10:00 AM - 6:00 PM</p>
         </div>
 
-        <div className="contact-map">
+        <div className="contact-map-about">
           <iframe
             title="N-Technologies Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.761089265838!2d79.68270817576511!3d26.942787458796918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e0d6ad42bea1b%3A0xf30dda011fb5403e!2sN-technologies!5e0!3m2!1sen!2sin!4v1753317388138!5m2!1sen!2sin"

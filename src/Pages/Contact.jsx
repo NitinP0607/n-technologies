@@ -6,7 +6,8 @@ const Contact = () => {
     <div className="contact-wrapper">
       <div className="contact-header">
         <h1>Get in Touch</h1>
-        <p>We'd love to hear from you. Reach out to us with your queries or feedback.</p>
+        <p>We'd love to hear from you. Reach out to us with your queries or feedback.<br/>
+        We're here to help you succeed, Your idea our tehnology will enhance your business</p>
       </div>
 
       <div className="contact-main">
