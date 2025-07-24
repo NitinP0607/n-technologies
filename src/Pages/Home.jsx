@@ -8,10 +8,8 @@ const Home = () => {
     <div className="home">
       <div className="home-section">
         <div className="left-home-section">
-          <h1>
-            N-Technologies <br />
-            <span>Top Services</span>
-          </h1>
+          <h1>N-Technologies </h1> <br />
+          <span>Top Services</span>
           <p>We Provide Best Quality Product and Services</p>
           <marquee behavior="right" direction="alternate" scrollamount="">
             <span>We are also connects you with the best freelancers</span>
@@ -22,6 +20,7 @@ const Home = () => {
           <img src={teams} alt="img not found" />
         </div>
       </div>
+      <hr />
       <div className="home-bottom-section">
         <h2>What We Provide.. ?</h2>
         <div className="contents">
@@ -82,7 +81,8 @@ const Home = () => {
             <h3>UI/UX Design</h3>
             <p>
               User experience is everything. It always has been, but it's still
-              undervalued and underinvested in. <br />The details are not the details. They make the design.
+              undervalued and underinvested in. <br />
+              The details are not the details. They make the design.
             </p>
           </div>
         </div>
