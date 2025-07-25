@@ -16,7 +16,7 @@ const Home = () => {
            <br /> <span style={{ color: "#233b4bff" }}>Your Vision, Our Code.</span>
           </p>
           <marquee behavior="right" direction="alternate" scrollamount="">
-            <span>We are also connects you with the best freelancers</span>
+            <span>Behind every successful business is a strong digital backbone, and we are here to help you build it</span>
           </marquee>
           <Link to="/contact">Contact us</Link>
         </div>

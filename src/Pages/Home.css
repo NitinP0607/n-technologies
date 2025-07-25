@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  min-height: 100vh;
 }
 
 .left-home-section {
