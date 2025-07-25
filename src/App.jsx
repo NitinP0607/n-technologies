@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Careers from "./Pages/Careers";
 import Footer from "./Pages/Footer";
+import BackendIntern from "./Components/BackendIntern";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/careers/backend-Internship" element={<BackendIntern />} />
         </Routes>
         <Footer />
       </Router>

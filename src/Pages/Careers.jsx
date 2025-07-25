@@ -30,7 +30,7 @@ const Careers = () => {
             <p>
               <strong>Skills Required:</strong> HTML, CSS, JavaScript, React
             </p>
-            <Link to={"/apply-internship"} className="apply-btn">
+            <Link to={"/careers/backend-Internship"} className="apply-btn">
               Apply Now
             </Link>
           </div>
@@ -49,7 +49,7 @@ const Careers = () => {
               <strong>Skills Required:</strong> Java, Python, C/C++, SQL/MONGO
               DB
             </p>
-            <Link to={"/apply-internship"} className="apply-btn">
+            <Link to={"/backend-Internship"} className="apply-btn">
               Apply Now
             </Link>
           </div>

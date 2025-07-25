@@ -1,0 +1,39 @@
+.backend-internship-card{
+  background: #ffffff;
+  border-radius: 12px;
+  padding-top: 150px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.card{
+    padding: 20px;
+}
+
+.card h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.apply-btn {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
