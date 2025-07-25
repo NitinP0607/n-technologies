@@ -1,0 +1,134 @@
+.frontend-form-wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 200px 20px;
+  background: #fffdf9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.frontend-form-wrapper h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.frontend-form-wrapper p {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.frontend-internship-form input,
+.frontend-internship-form textarea,
+.frontend-internship-form input[type="file"] {
+  margin-bottom: 15px;
+}
+
+
+.toggle-btn:hover {
+  background-color: #e2544a;
+}
+
+.frontend-internship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.frontend-internship-form input,
+.frontend-internship-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.frontend-internship-form input:focus,
+.frontend-internship-form textarea:focus {
+  border-color: #ff6f61;
+}
+
+.frontend-internship-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.frontend-internship-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.frontend-internship-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.frontend-internship-form input[type="file"] {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .frontend-form-wrapper {
+    padding: 150px 30px;
+  }
+
+  .frontend-form-wrapper h2 {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 15px;
+  }
+
+  .frontend-internship-form input,
+  .frontend-internship-form textarea {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frontend-form-wrapper {
+    padding: 150px 10px;
+  }
+
+  .toggle-btn,
+  .frontend-internship-form button[type="submit"] {
+    width: 100%;
+  }
+}

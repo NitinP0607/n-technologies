@@ -6,8 +6,6 @@ import app_job from "../assets/appdevelopment.jpeg";
 import digi_marketing from "../assets/digital marketing.jpeg";
 import ui_ux from "../assets/uiux.jpeg";
 import softere_development from "../assets/software-development.jpeg";
-import front_techno from "../assets/frontend_technologies-img.png";
-
 const Services = () => {
   return (
     <div className="services-main">

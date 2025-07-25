@@ -14,12 +14,15 @@
   font-weight: 900;
   cursor: pointer;
   color: rgb(141, 93, 93);
+  
+
 }
 .services-main h1:hover {
   color: #9e8f38;
   text-decoration: underline;
 }
 .services-section {
+  
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
