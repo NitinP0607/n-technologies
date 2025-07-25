@@ -11,7 +11,7 @@ import Footer from "./Pages/Footer";
 import WebIntern from "./Components/WebIntern"
 import BackendIntern from "./Components/BackendIntern";
 import DigitalMarketingIntern from "./Components/DigitalIntern";
-import Eve from "./Components/eve";
+import Eve from "./Components/Eve"
 
 const App = () => {
   return (
