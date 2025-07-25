@@ -10,7 +10,11 @@ const Home = () => {
         <div className="left-home-section">
           <h1>N-Technologies </h1> <br />
           <span>Top Services</span>
-          <p>We Provide Best Quality Product and Services</p>
+          <p>
+            We Provide Best Quality Product and Services <br /> Innovating the
+            Future, One Line of Code at a Time.
+           <br /> <span style={{ color: "#233b4bff" }}>Your Vision, Our Code.</span>
+          </p>
           <marquee behavior="right" direction="alternate" scrollamount="">
             <span>We are also connects you with the best freelancers</span>
           </marquee>
