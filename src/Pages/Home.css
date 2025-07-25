@@ -82,7 +82,8 @@
 }
 
 .left-home-section a {
-  width: 100%;
+  width: 50%;
+  text-align: center;
   display: inline-block;
   margin-top: 10px;
   padding: 10px 18px;

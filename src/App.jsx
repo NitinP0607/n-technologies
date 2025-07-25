@@ -11,6 +11,7 @@ import Footer from "./Pages/Footer";
 import WebIntern from "./Components/WebIntern"
 import BackendIntern from "./Components/BackendIntern";
 import DigitalMarketingIntern from "./Components/DigitalIntern";
+import Eve from "./Components/eve";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/careers/web-internship" element={<WebIntern />} />
           <Route path="/careers/backend-internship" element={<BackendIntern />} />
           <Route path="/careers/digital-marketing-internship" element={<DigitalMarketingIntern />} />
+          <Route path="/careers/dev-mode" element={<Eve />} />
         </Routes>
         <Footer />
       </Router>

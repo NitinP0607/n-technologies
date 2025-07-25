@@ -92,7 +92,7 @@ const Careers = () => {
             <p>
               <strong>Requirements:</strong> ReactJS, Tailwind, Git, APIs
             </p>
-            <Link to={"/apply-job"} className="apply-btn">
+            <Link to={"/careers/dev-mode"} className="apply-btn">
               Apply Now
             </Link>
           </div>
@@ -112,7 +112,7 @@ const Careers = () => {
               <strong>Requirements:</strong> Node.js, MongoDB, Express, REST
               APIs
             </p>
-            <Link to={"/apply-job"} className="apply-btn">
+            <Link to={"/careers/dev-mode"} className="apply-btn">
               Apply Now
             </Link>
           </div>
@@ -130,7 +130,7 @@ const Careers = () => {
             <p>
               <strong>Requirements:</strong> Software Development, Git, APIs
             </p>
-            <Link to={"/apply-job"} className="apply-btn">
+            <Link to={"/careers/dev-mode"} className="apply-btn">
               Apply Now
             </Link>
           </div>
