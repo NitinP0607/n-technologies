@@ -50,7 +50,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  min-height: 100vh;
 }
 
 .left-home-section {
@@ -199,5 +198,7 @@ hr {
   }
 }
 @media screen and (max-width: 1380px) {
-
+  .home{
+    padding: 200px 22px;
+  }
 }

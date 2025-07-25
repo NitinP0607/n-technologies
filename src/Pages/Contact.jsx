@@ -9,7 +9,17 @@ const Contact = () => {
         <p>We'd love to hear from you. Reach out to us with your queries or feedback.<br/>
         We're here to help you succeed, Your idea our tehnology will enhance your business</p>
       </div>
-
+      <div className="quotes">
+            <blockquote>
+              “The best way to predict the future is to create it.” <br />– Peter Drucker
+            </blockquote>
+            <blockquote>
+              “Success is not in what you have, but who you are.” <br />– Bo Bennett
+            </blockquote>
+            <blockquote>
+              “Technology like art is a soaring exercise of the human imagination.” <br />– Daniel Bell
+            </blockquote>
+          </div>
       <div className="contact-main">
         <div className="contact-info">
           <h2>N-Technologies</h2>
