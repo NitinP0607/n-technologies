@@ -4,6 +4,46 @@
   font-family: Arial, sans-serif;
 }
 
+.who-we-are .intro,
+.mission-vision,
+.quotes {
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.intro p,
+.mission-vision p,
+.quotes blockquote {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.mission, .vision {
+  flex: 1 1 45%;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.quotes blockquote {
+  font-style: italic;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  border-left: 4px solid #007acc;
+  color: #444;
+}
+
 .home-section {
   display: flex;
   flex-wrap: wrap;
@@ -115,8 +155,8 @@ hr {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .home{
-    padding: 100px 20px;
+ .home{
+    padding: 200px 22px;
   }
   .home-section {
     flex-direction: column;
@@ -140,14 +180,10 @@ hr {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1380px){
-  .home{
-    padding: 150px 20px;
-  }
-}
+
 @media screen and (max-width: 480px) {
   .home{
-    padding: 150px 20px;
+    padding: 200px 22px;
   }
   .left-home-section h1 {
     font-size: 24px;
@@ -161,4 +197,7 @@ hr {
     padding: 8px 14px;
     font-size: 14px;
   }
+}
+@media screen and (max-width: 1380px) {
+
 }
