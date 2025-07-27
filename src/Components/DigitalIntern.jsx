@@ -98,9 +98,6 @@ const DigitalMarketingIntern = () => {
       <button className="toggle-btn" onClick={() => setApply(!apply)}>
         {apply ? "Close Form" : "Apply Now"}
       </button>
-      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
-        click here if form is not working.
-      </Link>
 
       {apply && (
         <div className="digital-internship-form">
