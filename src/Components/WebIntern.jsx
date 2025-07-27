@@ -35,7 +35,7 @@ const WebIntern = () => {
     data.append("resume", formData.resume);
 
     try {
-      const response = await fetch("http://localhost:8080/api/web-intern", {
+      const response = await fetch("https://n-technologies-backend.onrender.com/api/web-intern", {
         method: "POST",
         body: data,
       });

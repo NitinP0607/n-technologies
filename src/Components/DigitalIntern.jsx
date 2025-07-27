@@ -35,7 +35,7 @@ const DigitalMarketingIntern = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/digital-marketing-intern",
+        "https://n-technologies-backend.onrender.com/api/digital-marketing-intern",
         {
           method: "POST",
           body: data,
