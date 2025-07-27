@@ -5,6 +5,7 @@ import prakki from "../assets/prakki.jpg";
 import anku from "../assets/anku.jpg";
 import sharad from "../assets/sharad.jpg";
 import akash from "../assets/akash_dp.jpg";
+import ashish from "../assets/asish_digital.jpg";
 
 const About = () => {
   return (
@@ -129,10 +130,26 @@ const About = () => {
             <div className="personal-team">
               <img src={akash} alt="" />
               <p>
-                Akash Kumar Social Media Manager with 3+ years of experience building brand
-                presence across Instagram, LinkedIn, Facebook, and YouTube. I
-                specialize in content strategy, performance analytics, paid ads,
-                and community engagement.
+                Akash Kumar Social Media Manager with 3+ years of experience
+                building brand presence across Instagram, LinkedIn, Facebook,
+                and YouTube. I specialize in content strategy, performance
+                analytics, paid ads, and community engagement.
+              </p>
+            </div>
+          </div>
+          <div className="team">
+            <h3>Ashish Diwakar</h3>
+            <h4>Digital Marketing Executive</h4>
+            <hr />
+            <div className="personal-team">
+              <img src={ashish} alt="" />
+              <p>
+                Ashish is the creative force behind our digital presence. With a
+                strong background in SEO, content strategy, and social media
+                marketing, he helps ensure our brand connects with the right
+                audience. His data-driven mindset and innovative campaigns have
+                boosted engagement and delivered measurable results for our
+                clients.
               </p>
             </div>
           </div>
