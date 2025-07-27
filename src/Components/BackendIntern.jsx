@@ -7,6 +7,7 @@ const BackendIntern = () => {
     fullName: "",
     email: "",
     github: "",
+    linkedin: "",
     reason: "",
     language: "",
     resume: null,
@@ -20,27 +21,50 @@ const BackendIntern = () => {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
   };
-   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", formData);
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (!formData.resume) {
-      alert("Please upload your resume.");
-      return;
-    }
+  if (!formData.resume) {
+    alert("Please upload your resume.");
+    return;
+  }
 
-    // Here you'd typically send `formData` to backend via API
-    alert("Application submitted!");
-      setFormData({
-      fullName: "",
-      email: "",
-      github: "",
-      reason: "",
-      language: "",
-      resume: null,
+  const data = new FormData();
+  data.append("fullName", formData.fullName);
+  data.append("email", formData.email);
+  data.append("github", formData.github);
+  data.append("linkedin", formData.linkedin);
+  data.append("reason", formData.reason);
+  data.append("language", formData.language);
+  data.append("resume", formData.resume);
+
+  try {
+    const response = await fetch("http://localhost:8080/api/backend-intern", {
+      method: "POST",
+      body: data,
     });
-    setShowForm(false);
-  };
+
+    if (response.ok) {
+      alert("Application submitted successfully!");
+      setFormData({
+        fullName: "",
+        email: "",
+        github: "",
+        linkedin: "",
+        reason: "",
+        language: "",
+        resume: null,
+      });
+      setShowForm(false);
+    } else {
+      alert("Submission failed. Please try again.");
+    }
+  } catch (error) {
+    console.error("Submission error:", error);
+    alert("Something went wrong!");
+  }
+};
+
 
   return (
     <div className="backend-form-wrapper">
@@ -59,6 +83,17 @@ const BackendIntern = () => {
         Work with technologies like Node.js, Express, MongoDB, REST APIs, and
         more. Apply now for real-world backend development experience!
       </p>
+      <h3>👨‍💻 Requirements</h3>
+      <div className="backend-requirements">
+        <ul>
+          <li>Proficient in JavaScript (Node.js), Java , Python or PHP.</li>
+          <li>Good problem-solving skills.</li>
+          <li>Familiar with API development and Inegration</li>
+          <li>Ability to work as a individually as well as in a team.</li>
+          <li>Familiar with GitHub,vercel or render.</li>
+          <li>Passionate about backend development.</li>
+        </ul>
+      </div>
 
       <button className="toggle-btn" onClick={() => setShowForm(!showForm)}>
         {showForm ? "Close Form" : "Apply Now"}
@@ -107,10 +142,18 @@ const BackendIntern = () => {
             <option value="Go">Go</option>
             <option value="Other">Other</option>
           </select>
+          <input
+            type="text"
+            name="linkedin"
+            placeholder="Enter your LinkedIn Profile Link"
+            value={formData.linkedin} 
+            onChange={handleChange}
+            required
+          />
 
           <textarea
             name="reason"
-            placeholder="Why do you want this internship?"
+            placeholder="Enter your linked-in Profile and why you want to join our team"
             value={formData.reason}
             onChange={handleChange}
             required

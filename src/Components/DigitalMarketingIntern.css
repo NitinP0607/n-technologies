@@ -28,6 +28,11 @@
   margin-bottom: 30px;
 }
 
+.digital-requirements{
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
 .toggle-btn {
   display: block;
   margin: 0 auto 20px;

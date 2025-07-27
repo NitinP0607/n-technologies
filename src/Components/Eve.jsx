@@ -4,7 +4,8 @@ import "./Eve.css"
 const Eve = () => {
   return (
     <div className='eve'>
-      <h1>This site under Development Mode</h1>
+      <h2>Hiring closed for this role</h2>
+
     </div>
   )
 }

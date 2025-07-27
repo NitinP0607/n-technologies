@@ -26,6 +26,10 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.backend-requirements{
+  margin-bottom: 20px;
+  padding: 20px;
+}
 
 .internship-form {
   display: flex;
