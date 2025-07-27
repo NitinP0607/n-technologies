@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./DigitalMarketingIntern.css";
-
+import { Link } from "react-router-dom";
 const DigitalMarketingIntern = () => {
   const [apply, setApply] = useState(false);
   const fileInputRef = useRef(null);
@@ -76,9 +76,8 @@ const DigitalMarketingIntern = () => {
         interns. Work on real campaigns using SEO, social media, and content
         strategies to grow online presence.
       </p>
-     <h3>👨‍💻 Requirements</h3>
+      <h3>👨‍💻 Requirements</h3>
       <div className="digital-requirements">
-        
         <ul>
           <li>
             Understanding of SEO, SEM, and social media marketing strategies.
@@ -99,6 +98,9 @@ const DigitalMarketingIntern = () => {
       <button className="toggle-btn" onClick={() => setApply(!apply)}>
         {apply ? "Close Form" : "Apply Now"}
       </button>
+      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
+        click here if form is not working.
+      </Link>
 
       {apply && (
         <div className="digital-internship-form">
@@ -144,6 +146,9 @@ const DigitalMarketingIntern = () => {
               required
             />
             <button type="submit">Submit Application</button>
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
+              click here if form is not working.
+            </Link>
           </form>
         </div>
       )}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./BackendIntern.css";
 
 const BackendIntern = () => {
@@ -13,7 +14,7 @@ const BackendIntern = () => {
     resume: null,
   });
 
-   const handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === "resume") {
       setFormData((prev) => ({ ...prev, resume: files[0] }));
@@ -21,59 +22,63 @@ const BackendIntern = () => {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
   };
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  if (!formData.resume) {
-    alert("Please upload your resume.");
-    return;
-  }
-
-  const data = new FormData();
-  data.append("fullName", formData.fullName);
-  data.append("email", formData.email);
-  data.append("github", formData.github);
-  data.append("linkedin", formData.linkedin);
-  data.append("reason", formData.reason);
-  data.append("language", formData.language);
-  data.append("resume", formData.resume);
-
-  try {
-    const response = await fetch("https://n-technologies-backend.onrender.com/api/backend-intern", {
-      method: "POST",
-      body: data,
-    });
-
-    if (response.ok) {
-      alert("Application submitted successfully!");
-      setFormData({
-        fullName: "",
-        email: "",
-        github: "",
-        linkedin: "",
-        reason: "",
-        language: "",
-        resume: null,
-      });
-      setShowForm(false);
-    } else {
-      alert("Submission failed. Please try again.");
+    if (!formData.resume) {
+      alert("Please upload your resume.");
+      return;
     }
-  } catch (error) {
-    console.error("Submission error:", error);
-    alert("Something went wrong!");
-  }
-};
 
+    const data = new FormData();
+    data.append("fullName", formData.fullName);
+    data.append("email", formData.email);
+    data.append("github", formData.github);
+    data.append("linkedin", formData.linkedin);
+    data.append("reason", formData.reason);
+    data.append("language", formData.language);
+    data.append("resume", formData.resume);
+
+    try {
+      const response = await fetch(
+        "https://n-technologies-backend.onrender.com/api/backend-intern",
+        {
+          method: "POST",
+          body: data,
+        }
+      );
+
+      if (response.ok) {
+        alert("Application submitted successfully!");
+        setFormData({
+          fullName: "",
+          email: "",
+          github: "",
+          linkedin: "",
+          reason: "",
+          language: "",
+          resume: null,
+        });
+        setShowForm(false);
+      } else {
+        alert("Submission failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Something went wrong!");
+    }
+  };
 
   return (
     <div className="backend-form-wrapper">
       <h2>🚀 Backend Developer Internship</h2>
       <blockquote className="quote">
-        "Great backend developers don’t just build code — they build trust, speed, and scalability."
+        "Great backend developers don’t just build code — they build trust,
+        speed, and scalability."
       </blockquote>
       <blockquote className="quote">
-        "Every great app runs on an invisible engine — be the developer behind it."
+        "Every great app runs on an invisible engine — be the developer behind
+        it."
       </blockquote>
       <blockquote className="quote">
         "Internships don’t build resumes — they build **you**."
@@ -109,7 +114,6 @@ const handleSubmit = async (e) => {
             onChange={handleChange}
             required
           />
-
           <input
             type="email"
             name="email"
@@ -118,7 +122,6 @@ const handleSubmit = async (e) => {
             onChange={handleChange}
             required
           />
-
           <input
             type="text"
             name="github"
@@ -127,7 +130,6 @@ const handleSubmit = async (e) => {
             onChange={handleChange}
             required
           />
-
           <select
             name="language"
             value={formData.language}
@@ -146,11 +148,10 @@ const handleSubmit = async (e) => {
             type="text"
             name="linkedin"
             placeholder="Enter your LinkedIn Profile Link"
-            value={formData.linkedin} 
+            value={formData.linkedin}
             onChange={handleChange}
             required
           />
-
           <textarea
             name="reason"
             placeholder="Enter your linked-in Profile and why you want to join our team"
@@ -158,15 +159,17 @@ const handleSubmit = async (e) => {
             onChange={handleChange}
             required
           ></textarea>
-             <input
+          <input
             type="file"
             name="resume"
             accept=".pdf,.doc,.docx"
             onChange={handleChange}
             required
           />
-
           <button type="submit">Submit Application</button>
+          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
+            click here if form is not working.
+          </Link>
         </form>
       )}
     </div>

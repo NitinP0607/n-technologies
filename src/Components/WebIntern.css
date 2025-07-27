@@ -47,6 +47,11 @@
 .frontend-internship-form input[type="file"] {
   margin-bottom: 15px;
 }
+.frontend-internship-form a{
+  text-decoration: none;
+  color: #0c1722;
+  padding: 15px;
+}
 
 
 .toggle-btn:hover {

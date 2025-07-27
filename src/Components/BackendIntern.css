@@ -55,6 +55,11 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.internship-form a{
+  text-decoration: none;
+  color: #0c1722;
+  padding: 15px;
+}
 .quote {
   font-style: italic;
   font-size: 16px;

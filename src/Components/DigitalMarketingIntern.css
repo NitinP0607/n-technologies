@@ -59,6 +59,11 @@
   margin-bottom: 20px;
   color: #34495e;
 }
+.digital-internship-form a{
+  text-decoration: none;
+  color: #0c1722;
+  padding: 15px;
+}
 
 .digital-internship-form form {
   display: flex;
