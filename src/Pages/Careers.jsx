@@ -22,7 +22,7 @@ const Careers = () => {
               <strong>Location:</strong> Remote
             </p>
             <p>
-              <strong>Duration:</strong> 2 months
+              <strong>Duration:</strong> 3 months
             </p>
             <p>
               <strong>Stipend:</strong> ₹1000 + Certificate
@@ -40,7 +40,7 @@ const Careers = () => {
               <strong>Location:</strong> Remote
             </p>
             <p>
-              <strong>Duration:</strong> 2 months
+              <strong>Duration:</strong> 3 months
             </p>
             <p>
               <strong>Stipend:</strong> ₹1000 + Certificate
@@ -60,10 +60,10 @@ const Careers = () => {
               <strong>Location:</strong> Remote
             </p>
             <p>
-              <strong>Duration:</strong> 1 month
+              <strong>Duration:</strong> 3 month
             </p>
             <p>
-              <strong>Stipend:</strong> Certificate Only
+              <strong>Stipend:</strong> ₹1000 Certificate Only
             </p>
             <p>
               <strong>Skills Required:</strong> Canva, SEO, Instagram, LinkedIn
