@@ -12,6 +12,12 @@ import WebIntern from "./Components/WebIntern"
 import BackendIntern from "./Components/BackendIntern";
 import DigitalMarketingIntern from "./Components/DigitalIntern";
 import Eve from "./Components/Eve"
+import FrontendReadmore from "./Components/ForntendReadmore"
+import BackendReadmore from "./Components/BackendReadmore"
+import AppdevelopmentReadmore from "./Components/AppdevelopmentReadmore"
+import DigitalMarketingReadmore from "./Components/DigitalMarketingReadmore"
+import UiReadmore from "./Components/UiReadmore"
+import SoftwareReadmore from "./Components/SoftwareReadmore"
 
 const App = () => {
   return (
@@ -28,6 +34,12 @@ const App = () => {
           <Route path="/careers/backend-internship" element={<BackendIntern />} />
           <Route path="/careers/digital-marketing-internship" element={<DigitalMarketingIntern />} />
           <Route path="/careers/dev-mode" element={<Eve />} />
+          <Route path="/services/frontend-read-more" element={<FrontendReadmore />} />
+          <Route path="/services/backend-read-more" element={<BackendReadmore />} />
+          <Route path="/services/appdevelopment-read-more" element={<AppdevelopmentReadmore />} />
+          <Route path="/services/digital-marketing-read-more" element={<DigitalMarketingReadmore />} />
+          <Route path="/services/ui-ux-read-more" element={<UiReadmore />} />
+          <Route path="/services/software-read-more" element={<SoftwareReadmore />} />
         </Routes>
         <Footer />
       </Router>

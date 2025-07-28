@@ -62,8 +62,9 @@
   margin-bottom: 1rem;
 }
 
-.service button {
+.service a {
   background-color: #0073e6;
+  text-decoration: none;
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;

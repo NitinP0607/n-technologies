@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import { Link } from "react-router-dom";
 import frontend_job from "../assets/frontend.png";
 import backend_job from "../assets/backend.avif";
 import app_job from "../assets/appdevelopment.jpeg";
@@ -18,7 +19,9 @@ const Services = () => {
             We are top frontend team who helps to build your ideas in practical
             way
           </p>
-          <button>Read More</button>
+          <Link to={"/services/frontend-read-more"}>
+            Read More
+          </Link>
         </div>
         <div className="service">
           <img src={backend_job} alt="frontend_deelopment" />
@@ -27,19 +30,19 @@ const Services = () => {
             We have the team who have skills and experience in Backend
             developers.
           </p>
-          <button>Read More</button>
+          <Link to={"/services/backend-read-more"}>Read More</Link>
         </div>
         <div className="service">
           <img src={app_job} alt="frontend_deelopment" />
           <span className="frontend-service">App Development</span>
           <p>Teams who are expert in App Development</p>
-          <button>Read More</button>
+          <Link to={"/services/appdevelopment-read-more"}>Read More</Link>
         </div>
         <div className="service">
           <img src={digi_marketing} alt="frontend_deelopment" />
           <span className="frontend-service">Digital Marketing</span>
           <p>Digital Marketing Team helps you to grow your business</p>
-          <button>Read More</button>
+          <Link to={"/services/digital-marketing-read-more"}>Read More</Link>
         </div>
         <div className="service">
           <img src={ui_ux} alt="frontend_deelopment" />
@@ -48,13 +51,13 @@ const Services = () => {
             UX/UI Design are according to your needs and provide better
             expereince
           </p>
-          <button>Read More</button>
+          <Link to={"/services/ui-ux-read-more"}>Read More</Link>
         </div>
         <div className="service">
           <img src={softere_development} alt="frontend_deelopment" />
           <span className="frontend-service">Software Development</span>
           <p>Helps you to build your software, which have your ideas</p>
-          <button>Read More</button>
+          <Link to={"/services/software-read-more"}>Read More</Link>
         </div>
       </div>
       <hr />

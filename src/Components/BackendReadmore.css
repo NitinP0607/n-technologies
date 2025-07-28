@@ -1,0 +1,30 @@
+.backend-dev-wrapper {
+  padding: 11rem 2rem;
+  max-width: 1000px;
+  min-height:  100vh;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+}
+
+.header-section h1 {
+  color: #0056d2;
+  margin-bottom: 1rem;
+}
+
+.tech-stack,
+.why-choose-us {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.cta-section {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #e9f3ff;
+  border-left: 5px solid #007bff;
+}
