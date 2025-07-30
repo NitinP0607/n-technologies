@@ -3,6 +3,7 @@ import "./DigitalMarketingIntern.css";
 import { Link } from "react-router-dom";
 const DigitalMarketingIntern = () => {
   const [apply, setApply] = useState(false);
+  const [loading, setLoading] = useState(false);
   const fileInputRef = useRef(null);
 
   const [formData, setFormData] = useState({
@@ -33,6 +34,8 @@ const DigitalMarketingIntern = () => {
     data.append("reason", formData.reason);
     data.append("resume", formData.resume);
 
+    setLoading(true); // Show loader
+
     try {
       const response = await fetch(
         "https://n-technologies-backend.onrender.com/api/digital-marketing-intern",
@@ -62,10 +65,19 @@ const DigitalMarketingIntern = () => {
       console.error("Error submitting form:", error);
       alert("Something went wrong!");
     }
+    finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="digital-form-wrapper">
+      {/* FULL SCREEN LOADER */}
+      {loading && (
+        <div className="overlay">
+          <div className="loader"></div>
+        </div>
+      )}
       <h2>📈 Digital Marketing Internship</h2>
       <p className="quote">
         "Marketing is no longer about the stuff that you make, but about the
@@ -142,7 +154,9 @@ const DigitalMarketingIntern = () => {
               onChange={handleFileChange}
               required
             />
-            <button type="submit">Submit Application</button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Submitting..." : "Submit Application"}
+            </button>
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
               click here if form is not working.
             </Link>

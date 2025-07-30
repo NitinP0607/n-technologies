@@ -4,6 +4,7 @@ import "./BackendIntern.css";
 
 const BackendIntern = () => {
   const [showForm, setShowForm] = useState(false);
+  const [loading, setLoading] = useState(false); // Loader state
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -24,11 +25,16 @@ const BackendIntern = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
+    const timeout = setTimeout(() => setLoading(false), 15000); // 15 seconds
 
     if (!formData.resume) {
       alert("Please upload your resume.");
       return;
     }
+
+    setLoading(true); // Show loader
 
     const data = new FormData();
     data.append("fullName", formData.fullName);
@@ -66,11 +72,20 @@ const BackendIntern = () => {
     } catch (error) {
       console.error("Submission error:", error);
       alert("Something went wrong!");
-    }
+    } finally {
+      clearTimeout(timeout);
+      setLoading(false);
+    } // Hide loader
   };
 
   return (
     <div className="backend-form-wrapper">
+      {/* FULL SCREEN LOADER */}
+      {loading && (
+        <div className="overlay">
+          <div className="loader"></div>
+        </div>
+      )}
       <h2>🚀 Backend Developer Internship</h2>
       <blockquote className="quote">
         "Great backend developers don’t just build code — they build trust,
@@ -103,7 +118,6 @@ const BackendIntern = () => {
       <button className="toggle-btn" onClick={() => setShowForm(!showForm)}>
         {showForm ? "Close Form" : "Apply Now"}
       </button>
-
       {showForm && (
         <form className="internship-form" onSubmit={handleSubmit}>
           <input
@@ -166,7 +180,9 @@ const BackendIntern = () => {
             onChange={handleChange}
             required
           />
-          <button type="submit">Submit Application</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Submitting..." : "Submit Application"}
+          </button>
           <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
             click here if form is not working.
           </Link>

@@ -4,6 +4,7 @@ import "./WebIntern.css";
 
 const WebIntern = () => {
   const [apply, setApply] = useState(false);
+  const [loading, setLoading] = useState(false); // Loader state
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,6 +28,9 @@ const WebIntern = () => {
       alert("Please upload your resume.");
       return;
     }
+
+     setLoading(true); // Show loader
+
 
     const data = new FormData();
     data.append("name", formData.name);
@@ -61,10 +65,19 @@ const WebIntern = () => {
       console.error("Error submitting form:", error);
       alert("Something went wrong!");
     }
+    finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="frontend-form-wrapper">
+      {/* FULL SCREEN LOADER */}
+      {loading && (
+        <div className="overlay">
+          <div className="loader"></div>
+        </div>
+      )}
       <h2>🎨 Frontend Developer Internship</h2>
       <p className="quote">
         "Design is not just what it looks like and feels like. Design is how it
@@ -135,7 +148,9 @@ const WebIntern = () => {
               onChange={handleFileChange}
               required
             />
-            <button type="submit">Submit Application</button>
+            <button type="submit" disabled={loading}>
+            {loading ? "Submitting..." : "Submit Application"}
+          </button> <br />
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdfmP1oLrfG46zwe7r3tF5r9z2l_Izr6qhw421EJ0EdMdSBXw/viewform">
               click here if form is not working.
             </Link>
