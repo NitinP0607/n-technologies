@@ -10,6 +10,7 @@ import ui_ux from "../assets/uiux.jpeg";
 import softere_development from "../assets/software-development.jpeg";
 
 const Services = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,6 +25,7 @@ const Services = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await fetch(
         "https://n-technologies-backend.onrender.com/api/send-service-request",
@@ -37,7 +39,7 @@ const Services = () => {
       );
 
       if (res.ok) {
-        alert("Request sent successfully!");
+        alert("Request sent successfully!, Team will reach you Soon");
         setFormData({
           name: "",
           email: "",
@@ -51,10 +53,19 @@ const Services = () => {
     } catch (error) {
       alert("Something went wrong.", error);
     }
+    finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="services-main">
+      {/* FULL SCREEN LOADER */}
+      {loading && (
+        <div className="overlay">
+          <div className="loader"></div>
+        </div>
+      )}
       <h1>Our Services</h1>
       <div className="services-section">
         <div className="service">
@@ -152,7 +163,9 @@ const Services = () => {
             onChange={handleChange}
             required
           />
-          <button type="submit">Submit Request</button>
+           <button type="submit" disabled={loading}>
+            {loading ? "Submitting..." : "Submit Application"}
+          </button>
         </form>
       </div>
     </div>
