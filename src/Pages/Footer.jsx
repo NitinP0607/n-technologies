@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="address-section">
           <h2>Address</h2> <hr />
           <p>
-            Kachatipur Kannauj Uttar Pradesh,209723 <br />
-            Landmark: Tirwa road Indrgarh Kannauj Uttar Pradesh <br />
+            Noida-62 Near Metro station 201301 <br />
+            Landmark: Just Behind Fortis Hospital <br />
             Phone: +91-9026532143
           </p>
         </div>

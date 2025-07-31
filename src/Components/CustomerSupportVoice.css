@@ -1,0 +1,39 @@
+.career-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 12rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.career-form input,
+.career-form textarea,
+.career-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.career-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.career-form button:hover {
+  background-color: #0056b3;
+}
+
+.thank-you-message {
+  text-align: center;
+  padding: 2rem;
+}

@@ -14,7 +14,7 @@ const Careers = () => {
       </div>
 
       <section className="careers-section">
-        <h2>🔹 Internships</h2>
+        <h2>🔹 Tech Internships</h2>
         <div className="careers">
           <div className="career-card">
             <h3>Web Development Intern</h3>
@@ -68,7 +68,10 @@ const Careers = () => {
             <p>
               <strong>Skills Required:</strong> Canva, SEO, Instagram, LinkedIn
             </p>
-            <Link to={"/careers/digital-marketing-internship"} className="apply-btn">
+            <Link
+              to={"/careers/digital-marketing-internship"}
+              className="apply-btn"
+            >
               Apply Now
             </Link>
           </div>
@@ -76,7 +79,7 @@ const Careers = () => {
       </section>
 
       <section className="careers-section">
-        <h2>🔹 Job Openings</h2>
+        <h2>🔹 Tech Job Openings</h2>
         <div className="careers">
           <div className="career-card">
             <h3>Frontend Developer (React)</h3>
@@ -131,6 +134,73 @@ const Careers = () => {
               <strong>Requirements:</strong> Software Development, Git, APIs
             </p>
             <Link to={"/careers/dev-mode"} className="apply-btn">
+              Apply Now
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="careers-section">
+        <h2>🔹 BPO Job Openings</h2> 
+        <div className="careers">
+          <div className="career-card">
+            <h3>Customer Support Executive</h3> 
+            <p>
+              <strong>Location:</strong> On-site – Noida
+            </p>
+            <p>
+              <strong>Experience:</strong> 0–2 Years
+            </p>
+            <p>
+              <strong>CTC:</strong> ₹1.8 - ₹2.4 LPA
+            </p>
+            <p>
+              <strong>Requirements:</strong> Good verbal communication,
+              English/Hindi fluency, Basic computer skills
+            </p>
+            <Link to={"/careers/customer-support-voice"} className="apply-btn">
+              Apply Now
+            </Link>
+          </div>
+
+          <div className="career-card">
+            <h3>Technical Support Executive</h3>
+            <p>
+              <strong>Location:</strong> On-site – Noida
+            </p>
+            <p>
+              <strong>Experience:</strong> 0–2 Years
+            </p>
+            <p>
+              <strong>CTC:</strong> ₹2 - ₹3 LPA
+            </p>
+            <p>
+              <strong>Requirements:</strong> Basic tech knowledge, Good verbal
+              communication, Troubleshooting skills
+            </p>
+            <Link to={"/careers/tech-support-voice"} className="apply-btn">
+              Apply Now
+            </Link>
+          </div>
+
+          <div className="career-card">
+            <h3>Customer Support Executive – Non-Voice</h3>
+            <p>
+              <strong>Location:</strong> On-site – Noida
+            </p>
+            <p>
+              <strong>Experience:</strong> 0–2 Years
+            </p>
+            <p>
+              <strong>CTC:</strong> ₹1.5 - ₹2.2 LPA
+            </p>
+            <p>
+              <strong>Requirements:</strong> Typing skills, Email/chat
+              communication
+            </p>
+            <Link
+              to={"/careers/customer-support-non-voice"}
+              className="apply-btn"
+            >
               Apply Now
             </Link>
           </div>

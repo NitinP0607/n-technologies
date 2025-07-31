@@ -24,12 +24,16 @@
 .careers-section {
   margin-top: 40px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
+  flex: 10px;
 }
 .careers{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
 }
 
 .careers-section h2 {
@@ -41,6 +45,8 @@
 .career-card {
   background-color: white;
   padding: 25px;
+  max-width: 500px; /* fixed width */
+  height: 320px;
   margin-bottom: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
@@ -60,6 +66,11 @@
 .career-card p {
   margin: 5px 0;
   color: #444;
+}
+.career-card a{
+    text-decoration: none;
+    position: relative;
+    bottom: 50;
 }
 
 .apply-btn {
@@ -87,11 +98,20 @@
 }
 @media screen and (max-width: 1380px){
     .careers{
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-arround;
         align-items: center;
     }
     .career-card {
         width: 100%;
+        padding: 10px;
+    }
+    .careers-section {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-arround;
+        align-items: center;
+    }
+    .careers-section h2{
+      text-align: center;
     }
 }

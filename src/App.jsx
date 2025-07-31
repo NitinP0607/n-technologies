@@ -18,6 +18,9 @@ import AppdevelopmentReadmore from "./Components/AppdevelopmentReadmore"
 import DigitalMarketingReadmore from "./Components/DigitalMarketingReadmore"
 import UiReadmore from "./Components/UiReadmore"
 import SoftwareReadmore from "./Components/SoftwareReadmore"
+import CustomerSupportVoice from "./Components/CustomerSupportVoice";
+import TechnicalSupport from "./Components/TechnicalSupport";
+import CustomerSupportnonVoice from "./Components/CustomerSupportnonVoice"; 
 
 const App = () => {
   return (
@@ -40,6 +43,10 @@ const App = () => {
           <Route path="/services/digital-marketing-read-more" element={<DigitalMarketingReadmore />} />
           <Route path="/services/ui-ux-read-more" element={<UiReadmore />} />
           <Route path="/services/software-read-more" element={<SoftwareReadmore />} />
+          <Route path="/careers/customer-support-voice" element={<CustomerSupportVoice />} />
+          <Route path="/careers/tech-support-voice" element={<TechnicalSupport />} />
+          <Route path="/careers/customer-support-non-voice" element={<CustomerSupportnonVoice />} />
+
         </Routes>
         <Footer />
       </Router>
